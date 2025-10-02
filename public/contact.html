@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Horizen - Contact Us</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <div class="cosmic-bg">
+      <div class="black-hole-container">
+        <div class="black-hole-glow"></div>
+        <div class="accretion-disk"></div>
+        <div class="black-hole"></div>
+        <div class="warp-rings">
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar glass">
+      <div class="nav-content">
+        <div class="title">
+          <a class="logo-title"
+            ><span class="material-symbols-outlined logo">circles</span> TRAVEL
+            HORIZEN</a
+          >
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./technology.html">Technology</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./application.html"
+              ><span class="material-symbols-outlined"
+                >arrow_forward_ios</span
+              ></a
+            >
+          </li>
+        </ul>
+
+        <div class="more-menu">
+          <span class="material-symbols-outlined">more_vert</span>
+          <ul class="dropdown">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./technology.html">Technology</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./application.html">Go</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+     <!-- USING DUMMY INFORMATION -->
+    <div class="block"></div>
+    <div class="main-content">
+      <div class="contact-hero">
+        <h1>Galactic Contact Directory</h1>
+        <p>
+          Navigate through our cosmic network of locations across galaxies and
+          solar systems to find the right contact information for your sector.
+        </p>
+      </div>
+
+      <div class="search-container glass">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search galaxies, solar systems, or locations..."
+        />
+      </div>
+
+      <div class="galactic-directory">
+        <!-- Andromeda Galaxy -->
+        <div class="galaxy-container glass" data-galaxy="andromeda">
+          <button class="collapse-btn" onclick="toggleGalaxy('andromeda')">
+            −
+          </button>
+          <div class="galaxy-header" onclick="toggleGalaxy('andromeda')">
+            <span class="material-symbols-outlined galaxy-icon"
+              >star_shine</span
+            >
+            <div class="galaxy-info">
+              <h2>Andromeda Galaxy</h2>
+              <p>Primary operations center for intergalactic communications</p>
+            </div>
+          </div>
+
+          <div class="solar-systems" id="andromeda-systems">
+            <div class="solar-system" data-system="alpha-centauri">
+              <div class="system-header">
+                <div class="system-icon">⭐</div>
+                <h3>Alpha Centauri System</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                      alpha.centauri@andromeda.gal
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Quantum Comm</div>
+                    <div class="contact-value">+GAL.AND.001.7432</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      Proxima Station, Sector 7<br />Alpha Centauri System
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      Galactic Standard: 0800-2000<br />Earth Time: 24/7
+                      Coverage
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="solar-system" data-system="kepler-442">
+              <div class="system-header">
+                <div class="system-icon">🪐</div>
+                <h3>Kepler-442 System</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">kepler442@andromeda.gal</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Quantum Comm</div>
+                    <div class="contact-value">+GAL.AND.442.9876</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      Kepler Station Prime<br />Habitable Zone, Planet B
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      Local Time: 0600-1800<br />Emergency: Always Available
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milky Way Galaxy -->
+        <div class="galaxy-container glass" data-galaxy="milky-way">
+          <button class="collapse-btn" onclick="toggleGalaxy('milky-way')">
+            −
+          </button>
+          <div class="galaxy-header" onclick="toggleGalaxy('milky-way')">
+            <span class="material-symbols-outlined galaxy-icon">storm</span>
+            <div class="galaxy-info">
+              <h2>Milky Way Galaxy</h2>
+              <p>Home base operations and regional headquarters</p>
+            </div>
+          </div>
+
+          <div class="solar-systems" id="milky-way-systems">
+            <div class="solar-system" data-system="sol">
+              <div class="system-header">
+                <div class="system-icon">☀️</div>
+                <h3>Sol System (Earth)</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">earth.hq@milkyway.gal</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Standard Comm</div>
+                    <div class="contact-value">+1 (555) GALAXY-1</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      Earth Station Alpha<br />North America Sector, Sol-3
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      UTC: 0900-1700 Mon-Fri<br />Emergency: 24/7 Available
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="solar-system" data-system="trappist-1">
+              <div class="system-header">
+                <div class="system-icon">🔴</div>
+                <h3>TRAPPIST-1 System</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">trappist1@milkyway.gal</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Red Dwarf Comm</div>
+                    <div class="contact-value">+GAL.MW.TRAP.1234</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      TRAPPIST Central Hub<br />Planet E Orbital Station
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      Synchronized Planetary: 0700-1900<br />Maintenance:
+                      0200-0600 Daily
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="solar-system" data-system="gliese-667c">
+              <div class="system-header">
+                <div class="system-icon">🌟</div>
+                <h3>Gliese 667C System</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">gliese667c@milkyway.gal</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Triple Star Comm</div>
+                    <div class="contact-value">+GAL.MW.667.5555</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      Gliese Research Outpost<br />Super-Earth Colony, Planet C
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      Binary Cycle: 12h Active/12h Rest<br />Research Ops:
+                      Continuous
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Triangulum Galaxy -->
+        <div class="galaxy-container glass" data-galaxy="triangulum">
+          <button class="collapse-btn" onclick="toggleGalaxy('triangulum')">
+            −
+          </button>
+          <div class="galaxy-header" onclick="toggleGalaxy('triangulum')">
+            <span class="material-symbols-outlined galaxy-icon">allergy</span>
+            <div class="galaxy-info">
+              <h2>Triangulum Galaxy</h2>
+              <p>Frontier operations and exploration division</p>
+            </div>
+          </div>
+
+          <div class="solar-systems" id="triangulum-systems">
+            <div class="solar-system" data-system="hd-40307">
+              <div class="system-header">
+                <div class="system-icon">💫</div>
+                <h3>HD 40307 System</h3>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mail</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">hd40307@triangulum.gal</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >mobile_2</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Deep Space Comm</div>
+                    <div class="contact-value">+GAL.TRI.403.0700</div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >location_on</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">
+                      Frontier Base Delta<br />HD 40307g Outpost
+                    </div>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="material-symbols-outlined contact-icon"
+                    >schedule</span
+                  >
+                  <div class="contact-content">
+                    <div class="contact-label">Active Hours</div>
+                    <div class="contact-value">
+                      Extended Shift: 16h Active/8h Rest<br />Priority Comms:
+                      Always Open
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="glass-strong">
+      <div class="footer-div">
+        <a href="mahmudulhasan.png@gmail.com" class="footer-item">
+          <p style="margin-left: 8px">mahmudulhasan.png@gmail.com</p>
+        </a>
+        <a href="+8801625715698" class="footer-item">
+          <p style="margin-left: 8px">+880 16257 15698</p>
+        </a>
+        <a
+          href="https://www.facebook.com/mahmudulhasan.apk"
+          class="footer-item"
+        >
+          <p>https://www.facebook.com/mahmudulhasan.apk</p>
+        </a>
+      </div>
+      <p style="margin-top: 15px; font-size: 14px; color: #aaa">
+        &copy; 2025 Mahmudul Hasan
+      </p>
+    </footer>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/Contact.js"></script>
+  </body>
+</html>

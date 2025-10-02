@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Horizen - Application Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/application.css" />
+  </head>
+  <body>
+    <div class="cosmic-bg">
+      <div class="black-hole-container">
+        <div class="black-hole-glow"></div>
+        <div class="accretion-disk"></div>
+        <div class="black-hole"></div>
+        <div class="warp-rings">
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="booking-form">
+        <div class="form-section">
+          <div class="section-title">
+            <span class="material-symbols-outlined">location_on</span>
+            Destination Selection
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="galaxy">Select Galaxy</label>
+              <select
+                id="galaxy"
+                class="dropdown-modern"
+                onchange="updateSolarSystems()"
+              >
+                <option value="">Choose your galaxy...</option>
+                <option value="milky-way">Milky Way Galaxy</option>
+                <option value="andromeda">Andromeda Galaxy</option>
+                <option value="triangulum">Triangulum Galaxy</option>
+                <option value="centaurus-a">Centaurus A Galaxy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="solar-system">Select Solar System</label>
+              <select
+                id="solar-system"
+                class="dropdown-modern"
+                disabled
+                onchange="updatePlanets()"
+              >
+                <option value="">Choose solar system...</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="planet">Select Planet</label>
+              <select
+                id="planet"
+                class="dropdown-modern"
+                disabled
+                onchange="updateCost(); showPlanetInfo()"
+              >
+                <option value="">Choose destination planet...</option>
+              </select>
+            </div>
+          </div>
+          <div id="planet-info-container"></div>
+        </div>
+
+        <div class="form-section">
+          <div class="section-title">
+            <span class="material-symbols-outlined">account_circle</span>
+            Traveler Information
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                id="full-name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="departure-date">Departure Date</label>
+              <input type="date" id="departure-date" required />
+            </div>
+            <div class="form-group">
+              <label for="duration">Trip Duration (Days)</label>
+              <select id="duration" onchange="updateCost()">
+                <option value="7">1 Week</option>
+                <option value="14">2 Weeks</option>
+                <option value="30">1 Month</option>
+                <option value="90">3 Months</option>
+                <option value="365">1 Year</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="cost-display">
+          <div class="cost-amount" id="total-cost">$0</div>
+          <div class="cost-label">Total Cost (USD)</div>
+        </div>
+
+        <button class="book-button" onclick="bookTrip()">
+          <span class="material-symbols-outlined">rocket_launch</span> Book Your
+          Cosmic Journey
+        </button>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="success-modal">
+      <div class="modal-content">
+        <span class="material-symbols-outlined success-icon">star_shine</span>
+        <h2>Booking Confirmed!</h2>
+        <p>Your cosmic adventure has been successfully booked!</p>
+        <div class="booking-code" id="booking-code-display">CV-XXXX-XXXX</div>
+        <p>Please save your booking code for future reference.</p>
+        <div class="modal-buttons">
+          <button class="btn btn-primary" onclick="downloadPDF()">
+            Download PDF
+          </button>
+          <button class="btn btn-secondary" onclick="closeModal()">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="glass-strong">
+      <div class="footer-div">
+        <a href="mahmudulhasan.png@gmail.com" class="footer-item">
+          <p style="margin-left: 8px">mahmudulhasan.png@gmail.com</p>
+        </a>
+        <a href="+8801625715698" class="footer-item">
+          <p style="margin-left: 8px">+880 16257 15698</p>
+        </a>
+        <a
+          href="https://www.facebook.com/mahmudulhasan.apk"
+          class="footer-item"
+        >
+          <p>https://www.facebook.com/mahmudulhasan.apk</p>
+        </a>
+      </div>
+      <p style="margin-top: 15px; font-size: 14px; color: #aaa">
+        &copy; 2025 Mahmudul Hasan
+      </p>
+    </footer>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/application.js"></script>
+  </body>
+</html>

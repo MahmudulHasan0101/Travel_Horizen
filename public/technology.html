@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Horizen - Technology</title>
+
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/technology.css" />
+  </head>
+  <body>
+    <div class="cosmic-bg">
+      <div class="black-hole-container">
+        <div class="black-hole-glow"></div>
+        <div class="accretion-disk"></div>
+        <div class="black-hole"></div>
+        <div class="warp-rings">
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+          <div class="warp-ring"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar glass">
+      <div class="nav-content">
+        <div class="title">
+          <a class="logo-title"
+            ><span class="material-symbols-outlined logo">circles</span> TRAVEL
+            HORIZEN</a
+          >
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./technology.html">Technology</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li>
+            <a href="./application.html"
+              ><span class="material-symbols-outlined"
+                >arrow_forward_ios</span
+              ></a
+            >
+          </li>
+        </ul>
+
+        <div class="more-menu">
+          <span class="material-symbols-outlined">more_vert</span>
+          <ul class="dropdown">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./technology.html">Technology</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./application.html">Go</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="header">
+        <h1>Galactic Fleet</h1>
+        <p>
+          Explore our advanced rocket technology and their interstellar
+          destinations across galaxies and solar systems
+        </p>
+      </div>
+
+      <div class="dropdown-container">
+        <div class="dropdown-toggle" onclick="toggleDropdown()">
+          <span>Select a Rocket to Explore</span>
+          <span class="dropdown-arrow material-symbols-outlined"
+            >keyboard_arrow_down</span
+          >
+        </div>
+        <div class="dropdown-content" id="dropdown">
+          <div class="rocket-item" onclick="selectRocket('falcon-heavy')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">rocket</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Falcon Heavy</div>
+              <div class="rocket-destination">
+                Milky Way - Inner Solar Systems
+              </div>
+            </div>
+          </div>
+          <div class="rocket-item" onclick="selectRocket('starship')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">star_shine</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Starship</div>
+              <div class="rocket-destination">
+                Milky Way - Outer Rim Territories
+              </div>
+            </div>
+          </div>
+          <div class="rocket-item" onclick="selectRocket('orion')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">globe_asia</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Orion Deep Space</div>
+              <div class="rocket-destination">
+                Andromeda Galaxy - Core Systems
+              </div>
+            </div>
+          </div>
+          <div class="rocket-item" onclick="selectRocket('nova-class')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">rocket</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Nova-Class Explorer</div>
+              <div class="rocket-destination">
+                Triangulum Galaxy - Research Outposts
+              </div>
+            </div>
+          </div>
+          <div class="rocket-item" onclick="selectRocket('quantum-drive')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">moon_stars</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Quantum Drive Vessel</div>
+              <div class="rocket-destination">
+                Large Magellanic Cloud - Mining Colonies
+              </div>
+            </div>
+          </div>
+          <div class="rocket-item" onclick="selectRocket('warp-cruiser')">
+            <div class="rocket-icon">
+              <span class="material-symbols-outlined">orbit</span>
+            </div>
+            <div class="rocket-info">
+              <div class="rocket-name">Warp Cruiser MK-VII</div>
+              <div class="rocket-destination">
+                Sagittarius Dwarf - Frontier Worlds
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rocket-details empty" id="rocket-details">
+        Select a rocket from the dropdown above to view detailed specifications
+        and destinations
+      </div>
+    </div>
+
+    <footer class="glass-strong">
+      <div class="footer-div">
+        <a href="mahmudulhasan.png@gmail.com" class="footer-item">
+          <p style="margin-left: 8px">mahmudulhasan.png@gmail.com</p>
+        </a>
+        <a href="+8801625715698" class="footer-item">
+          <p style="margin-left: 8px">+880 16257 15698</p>
+        </a>
+        <a
+          href="https://www.facebook.com/mahmudulhasan.apk"
+          class="footer-item"
+        >
+          <p>https://www.facebook.com/mahmudulhasan.apk</p>
+        </a>
+      </div>
+      <p style="margin-top: 15px; font-size: 14px; color: #aaa">
+        &copy; 2025 Mahmudul Hasan
+      </p>
+    </footer>
+
+    <script src="./scripts/common.js"></script>
+    <script src="./scripts/technology.js"></script>
+  </body>
+</html>
