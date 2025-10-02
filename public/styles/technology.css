@@ -60,7 +60,7 @@
 }
 
 .dropdown-content.active {
-  max-height: 400px;
+  max-height: 800px;
   margin-top: 0.5rem;
 }
 
