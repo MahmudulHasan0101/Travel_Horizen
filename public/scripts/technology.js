@@ -11,7 +11,7 @@ const rockets = {
     specs: {
       "Max Range": "15,000 light-years",
       "Payload Capacity": "64,000 kg",
-      "Crew Capacity": "7 astronauts",
+      "Crew Capacity": "200 people",
       Propulsion: "Chemical Rockets",
       "Top Speed": "0.001c",
       "Mission Duration": "6 months",
@@ -27,7 +27,7 @@ const rockets = {
     specs: {
       "Max Range": "50,000 light-years",
       "Payload Capacity": "150,000 kg",
-      "Crew Capacity": "100+ colonists",
+      "Crew Capacity": "600+ people",
       Propulsion: "Fusion Drive",
       "Top Speed": "0.05c",
       "Mission Duration": "2+ years",
@@ -43,7 +43,7 @@ const rockets = {
     specs: {
       "Max Range": "2.5 million light-years",
       "Payload Capacity": "500,000 kg",
-      "Crew Capacity": "200 specialists",
+      "Crew Capacity": "1000 people",
       Propulsion: "Antimatter Drive",
       "Top Speed": "0.15c",
       "Mission Duration": "50+ years",
@@ -59,7 +59,7 @@ const rockets = {
     specs: {
       "Max Range": "3 million light-years",
       "Payload Capacity": "300,000 kg",
-      "Crew Capacity": "150 scientists",
+      "Crew Capacity": "500 people",
       Propulsion: "Quantum Field Drive",
       "Top Speed": "0.2c",
       "Mission Duration": "25 years",
@@ -75,7 +75,7 @@ const rockets = {
     specs: {
       "Max Range": "180,000 light-years",
       "Payload Capacity": "2,000,000 kg",
-      "Crew Capacity": "50 engineers",
+      "Crew Capacity": "5000 people",
       Propulsion: "Quantum Tunneling Drive",
       "Top Speed": "0.1c",
       "Mission Duration": "10 years",
@@ -91,7 +91,7 @@ const rockets = {
     specs: {
       "Max Range": "100,000 light-years",
       "Payload Capacity": "80,000 kg",
-      "Crew Capacity": "25 explorers",
+      "Crew Capacity": "300 people",
       Propulsion: "Warp Field Generator",
       "Top Speed": "0.3c",
       "Mission Duration": "5 years",
